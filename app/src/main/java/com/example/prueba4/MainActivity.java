@@ -28,11 +28,12 @@ public class MainActivity extends AppCompatActivity {
         elBoton.setOnClickListener( new View.OnClickListener() {
 
             public void onClick(View v) {
-                elMensaje.setText(elTexto.getText());
-                Intent elIntento = new Intent(MainActivity.this, MenuActivity.class);
-                elIntento.putExtra("pasandoElTexto",elTexto.getText().toString());
-                startActivity(elIntento);
+//                elMensaje.setText(elTexto.getText());
+//                Intent elIntento = new Intent(MainActivity.this, MenuActivity.class);
+//                elIntento.putExtra("pasandoElTexto",elTexto.getText().toString());
+//                startActivity(elIntento);
 
+                  getSupportFragmentManager().beginTransaction().replace(R.id.my_first_fragment, new OtroFragment()).commit();
             }
         });
 

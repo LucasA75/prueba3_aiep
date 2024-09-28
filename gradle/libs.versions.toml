@@ -8,9 +8,11 @@ material = "1.12.0"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
 foundationLayoutAndroid = "1.7.2"
+fragment = "1.3.6"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
+fragment = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
